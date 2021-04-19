@@ -1,0 +1,142 @@
+@import "logo";
+@import "site-nav";
+
+.nav {
+  --hover-color: var(--color-navy);
+
+  display: flex;
+  align-items: center;
+}
+
+
+.nav__logo-btn-wrapper {
+  display: flex;
+  margin-right: 55px;
+  flex-shrink: 0;
+}
+
+.nav__logo {
+  width: 143px;
+}
+
+.nav__btn {
+  position: relative;
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+  padding: 0;
+  cursor: pointer;
+  transition: filter 300ms;
+  border: none;
+  background: none;
+}
+
+.nav__icon-btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__icon-btn {
+  transition: transform 300ms;
+}
+
+.nav__site-nav {
+  margin: 0 0 -20px 0;
+  padding: 0;
+}
+
+.nav__phone {
+  --text-size: var(--font-small);
+
+  display: flex;
+  margin-left: auto;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.nav__icon-phone {
+  margin-right: 10px;
+}
+
+@media (max-width: $desktop) {
+  .nav__logo-btn-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .nav__btn {
+    display: flex;
+  }
+
+  .nav__phone {
+    margin-top: 35px;
+    margin-left: 0;
+  }
+
+  .nav--open {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .nav__icon-btn--open {
+      transform: rotate3d(1, 0, 0, 90deg);
+      opacity: 0;
+    }
+
+    .nav__icon-btn--close {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav--close {
+    flex-direction: row;
+
+    .nav__icon-btn--open {
+      transform: rotate(0);
+      opacity: 1;
+    }
+
+    .nav__icon-btn--close {
+      transform: scale(0) rotate(180deg);
+      opacity: 0;
+    }
+
+    .nav__logo-btn-wrapper {
+      margin-bottom: 0;
+    }
+
+    .nav__site-nav {
+      display: none;
+    }
+
+    .nav__phone {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: $table) {
+  .nav__phone {
+    --text-size: var(--font-x-small);
+  }
+
+  .nav--open {
+    .nav__phone {
+      display: initial;
+    }
+  }
+
+  .nav--close {
+    .nav__phone {
+      display: none;
+    }
+  }
+}

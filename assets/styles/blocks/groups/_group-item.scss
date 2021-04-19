@@ -1,0 +1,51 @@
+.group-item {
+  --text-size: var(--font-x-small);
+
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  border: 3px solid var(--group-color);
+  border-radius: 12px;
+  align-items: center;
+}
+
+.group-item__reserve-btn {
+  margin: 20px 0 0;
+  border-color: var(--group-color);
+  background-color: var(--group-color);
+
+  &:hover {
+    filter: drop-shadow(0 0 5px var(--group-color));
+  }
+
+  &:focus {
+    outline-color: var(--group-color);
+  }
+}
+
+.group-item--babik-1 {
+  --group-color: var(--color-skyblue);
+}
+
+.group-item--babik-2 {
+  --group-color: var(--color-wheat);
+}
+
+.group-item--babik-3 {
+  --group-color: var(--color-pink);
+}
+
+.group-item__name {
+  --text-size: var(--font-medium);
+
+  margin: 0 0 20px;
+}
+
+.group-item__text {
+  margin: 10px 0;
+}
+
+.group-item__price {
+  font-size: 1.25em;
+  font-weight: 500;
+}

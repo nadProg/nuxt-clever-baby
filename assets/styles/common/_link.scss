@@ -1,0 +1,29 @@
+.link {
+  --hover-blur: 1px;
+
+  font: inherit;
+  transition: 300ms linear;
+  transition-property: opacity, filter, outline-color;
+  text-decoration: none;
+  color: inherit;
+  outline-offset: 5px;
+  outline-width: 2px;
+  outline-color: transparent;
+}
+
+.link:hover {
+  opacity: 0.85;
+  filter: drop-shadow(0 0 var(--hover-blur) var(--hover-color));
+}
+
+.link:focus {
+  --focus-color: var(--hover-color);
+
+  opacity: 1;
+  outline-color: var(--focus-color);
+}
+
+.link:hover:focus {
+  opacity: 0.85;
+  filter: drop-shadow(0 0 0 transparent);
+}

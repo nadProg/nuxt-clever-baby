@@ -1,0 +1,63 @@
+@import 'about/video-player';
+
+.about__title {
+  margin: 0 0 80px;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: $table) {
+    margin-bottom: 30px;
+  }
+}
+
+.about__text {
+  margin: 15px 0;
+}
+
+.about__text-lead {
+  margin: 0 0 20px;
+}
+
+@media (max-width: $table) {
+  .about__text {
+    margin: 10px 0;
+  }
+
+  .about__text-lead {
+    margin-bottom: 15px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+
+  @media (max-width: $table) {
+    flex-direction: column;
+  }
+}
+
+.about__column {
+  width: 50%;
+
+  @media (max-width: $table) {
+    width: 100%;
+  }
+}
+
+.about__column--text {
+  margin-right: 50px;
+
+  @media (max-width: $desktop) {
+    margin-right: 40px;
+  }
+
+  @media (max-width: $table) {
+    margin-right: 0;
+  }
+}
+
+.about__column--video {
+  flex-shrink: 0;
+}

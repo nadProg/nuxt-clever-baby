@@ -1,0 +1,58 @@
+@import "teachers/teacher-card";
+
+.teachers__header {
+  margin-bottom: 55px;
+}
+
+.teachers__title {
+  margin: 0;
+}
+
+.teachers__header-text {
+  width: 360px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.teachers__slider {
+  width: 100%;
+  margin: 0 auto;
+  transition: outline-color 300ms ;
+  outline-width: 2px;
+  outline-offset: 10px;
+  outline-color: transparent;
+}
+
+.teachers__slider:focus {
+  outline-color: var(--color-lightblue);
+}
+
+@media (max-width: $desktop) {
+  .teachers__header {
+    margin-bottom: 50px;
+  }
+
+  .teachers__slider {
+    width: $table;
+  }
+}
+
+@media (max-width: $table) {
+  .teachers__header {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .teachers__title {
+    margin-bottom: 30px;
+  }
+
+  .teachers__header-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .teachers__slider {
+    width: 290px;
+  }
+}

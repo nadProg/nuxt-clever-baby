@@ -1,0 +1,34 @@
+.title {
+  font-family: var(--font-rubik);
+  font-size: var(--font-xx-large);
+  font-weight: 500;
+  font-style: normal;
+  line-height: var(--font-line-height);
+  letter-spacing: 0;
+  color: var(--color-navy);
+
+  @media (max-width: $table) {
+    font-size: var(--font-large);
+  }
+}
+
+.title--intro {
+  font-size: var(--font-xxx-large);
+  line-height: 1;
+
+  @media (max-width: $table) {
+    font-size: var(--font-x-large);
+  }
+
+  .title__subtitle {
+    font-size: var(--font-medium);
+
+    @media (max-width: $table) {
+      font-size: var(--font-x-small);
+    }
+  }
+}
+
+.title--trial {
+  color: var(--color-white);
+}

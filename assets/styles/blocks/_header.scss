@@ -1,0 +1,8 @@
+@import 'header/nav';
+
+.header {
+  padding: 40px 0;
+  @media (max-width: $desktop) {
+    background-color: var(--color-white);
+  }
+}

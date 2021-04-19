@@ -1,0 +1,158 @@
+.bg-decor {
+  position: relative;
+}
+
+.bg-decor::before,
+.bg-decor::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.bg-decor--intro::before {
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 84px;
+  transform: translate(-50%, -100%);
+  background-image: url('/img/decor-car.svg');
+
+  @media (max-width: $desktop) {
+    width: 58px;
+    height: 46px;
+    transform: translate(0%, -110%);
+  }
+
+  @media (max-width: $table) {
+    width: 48px;
+    height: 38px;
+  }
+}
+
+.bg-decor--intro::after {
+  top: 0;
+  right: 0;
+  width: 91px;
+  height: 62px;
+  transform: translate(0, -100%);
+  background-image: url('/img/decor-cloud.svg');
+
+  @media (max-width: $desktop) {
+    content: none;
+  }
+}
+
+.bg-decor--about::before {
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 141px;
+  transform: translate(-50%, 85%);
+  background-image: url('/img/decor-girl.svg');
+
+  @media (max-width: $desktop) {
+    content: none;
+  }
+}
+
+.bg-decor--about::after {
+  top: 0;
+  right: 0;
+  width: 135px;
+  height: 68px;
+  transform: translate(-35%, -100%);
+  background-image: url('/img/decor-rocket.svg');
+
+  @media (max-width: $desktop) {
+    width: 101px;
+    height: 50px;
+  }
+
+  @media (max-width: $table) {
+    width: 67px;
+    height: 34px;
+  }
+}
+
+.bg-decor--groups::before {
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  transform: translate(50%, -100%);
+  background-image: url('/img/decor-star.svg');
+
+  @media (max-width: $desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.bg-decor--teachers::before {
+  bottom: 0;
+  left: 0;
+  width: 132px;
+  height: 142px;
+  transform: translate(-35%, 0);
+  background-image: url('/img/decor-pencil.svg');
+
+  @media (max-width: $desktop) {
+    content: none;
+  }
+}
+
+.bg-decor--teachers::after {
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 97px;
+  transform: translate(0, 0);
+  background-image: url('/img/decor-house.svg');
+
+  @media (max-width: $desktop) {
+    content: none;
+  }
+
+  @media (max-width: $table) {
+    width: 40px;
+    height: 58px;
+    content: '';
+  }
+}
+
+.bg-decor--trial::before {
+  bottom: 50%;
+  left: 0;
+  width: 185px;
+  height: 160px;
+  transform: translate(30%, 20%);
+  background-image: url('/img/decor-rainbow.svg');
+
+  @media (max-width: $desktop) {
+    width: 123px;
+    height: 107px;
+  }
+  @media (max-width: $table) {
+    content: none;
+  }
+}
+
+.bg-decor--trial::after {
+  right: 0;
+  bottom: 50%;
+  width: 118px;
+  height: 133px;
+  transform: translate(-100%, 50%);
+  background-image: url('/img/decor-boy.svg');
+
+  @media (max-width: $desktop) {
+    width: 78px;
+    height: 89px;
+  }
+  @media (max-width: $table) {
+    content: none;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  min-width: $mobile;
+  background-color: var(--color-ghostwhite);
+}
+
+body > header,
+body > section,
+body > footer {
+  width: 100%;
+}
+
+body main > section:not(:last-of-type) {
+  margin-bottom: 130px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $table) {
+    margin-bottom: 60px;
+  }
+}

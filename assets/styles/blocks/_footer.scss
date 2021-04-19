@@ -1,0 +1,30 @@
+.footer {
+  padding: 50px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+@media (max-width: $desktop) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: $table) {
+  .footer__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__copyright {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,35 @@
+.site-nav {
+  --text-size: var(--font-x-small);
+
+  display: flex;
+  width: 600px;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-nav__item {
+  margin: 0 20px 20px 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  padding: 5px 0;
+}
+
+@media (max-width: $desktop) {
+  .site-nav {
+    --text-size: var(--font-large);
+    
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: $table) {
+  .site-nav {
+    --text-size: var(--font-small);
+  }
+}

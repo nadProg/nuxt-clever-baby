@@ -1,0 +1,43 @@
+.btn {
+  font-family: var(--font-montserrat);
+  font-size: var(--font-x-small);
+  font-weight: 500;
+  line-height: var(--font-line-height);
+  display: inline-block;
+  padding: 18px 35px;
+  background-color: var(--bg-color);
+  transition: 300ms liner;
+  transition-property: opacity, filter, outline-color;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-navy);
+  border: none;
+  border-radius: 35px;
+  outline-width: 2px;
+  outline-offset: 5px;
+  outline-color: transparent;
+}
+
+.btn:hover {
+  --hover-color: var(--bg-color);
+
+  opacity: 0.85;
+  filter: drop-shadow(0 0 var(--hover-blur) var(--hover-color));
+}
+
+.btn:focus {
+  --focus-color: var(--bg-color);
+
+  opacity: 1;
+  outline-color: var(--focus-color);
+}
+
+.btn:hover:focus {
+  opacity: 0.85;
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.btn--reserve::before {
+  content: "Записаться";
+}
+

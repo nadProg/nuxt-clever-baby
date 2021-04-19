@@ -8,10 +8,3 @@
 <script>
 export default {}
 </script>
-<style>
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>

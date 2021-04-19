@@ -22,8 +22,13 @@
     }
   },
   "dependencies": {
+    "@algoz098/vue-player": "^0.4.3",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "nuxt-leaflet": "0.0.25",
+    "nuxt-video-player": "^1.0.17",
+    "vue-plyr": "^7.0.0",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
