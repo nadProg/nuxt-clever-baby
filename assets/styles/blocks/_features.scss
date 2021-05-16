@@ -17,7 +17,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  background-image: url('/img/bg-features-596w.png');
+  background-image: url('~assets/img/bg-features-596w.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: 597px 472px;
@@ -25,7 +25,7 @@
   @media (max-width: $desktop) {
     max-width: 870px;
     min-height: 355px;
-    background-image: url('/img/bg-features-380w.png');
+    background-image: url('~assets/img/bg-features-380w.png');
     background-size: 380px 355px;
   }
 
@@ -33,50 +33,50 @@
     max-width: 1.5 * $mobile;
     min-height: 494px;
     padding: 0 15px;
-    background-image: url('/img/bg-features-320w.png');
+    background-image: url('~assets/img/bg-features-320w.png');
     background-position: center top 100px;
     background-size: 320px 494px;
   }
 }
 
 .webp .features__list {
-  background-image: url('/img/bg-features-596w.webp');
+  background-image: url('~assets/img/bg-features-596w.webp');
 
   @media (max-width: $desktop) {
-    background-image: url('/img/bg-features-380w.webp');
+    background-image: url('~assets/img/bg-features-380w.webp');
   }
 
   @media (max-width: $table) {
-    background-image: url('/img/bg-features-320w.webp');
+    background-image: url('~assets/img/bg-features-320w.webp');
   }
 }
 
 @media (min-resolution: 1.5dppx) {
   .features__list {
     @media (min-width: $desktop) {
-      background-image: url('/img/bg-features-596w-2x.png');
+      background-image: url('~assets/img/bg-features-596w-2x.png');
     }
 
     @media (max-width: $desktop) {
-      background-image: url('/img/bg-features-380w-2x.png');
+      background-image: url('~assets/img/bg-features-380w-2x.png');
     }
 
     @media (max-width: $table) {
-      background-image: url('/img/bg-features-320w-2x.png');
+      background-image: url('~assets/img/bg-features-320w-2x.png');
     }
   }
 
   .webp .features__list {
     @media (min-width: $desktop) {
-      background-image: url('/img/bg-features-596w-2x.webp');
+      background-image: url('~assets/img/bg-features-596w-2x.webp');
     }
 
     @media (max-width: $desktop) {
-      background-image: url('/img/bg-features-380w-2x.webp');
+      background-image: url('~assets/img/bg-features-380w-2x.webp');
     }
 
     @media (max-width: $table) {
-      background-image: url('/img/bg-features-320w-2x.webp');
+      background-image: url('~assets/img/bg-features-320w-2x.webp');
     }
   }
 }

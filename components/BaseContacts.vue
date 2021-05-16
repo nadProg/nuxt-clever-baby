@@ -42,6 +42,7 @@
                     class="socials__link link"
                     :href="social.link"
                     target="_blank"
+                    rel="noopener"
                   >
                     <svg
                       class="socials_icon"

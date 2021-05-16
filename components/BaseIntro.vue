@@ -13,7 +13,9 @@
       <p class="intro__text">
         <slot name="text" />
       </p>
-      <nuxt-link class="intro__reserve-btn btn btn--reserve" to="/" />
+      <nuxt-link class="intro__reserve-btn btn btn--reserve" to="/">
+        <slot name="reserve-btn" />
+      </nuxt-link>
     </div>
   </section>
 </template>

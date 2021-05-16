@@ -18,12 +18,12 @@
           <picture>
             <source
               type="image/webp"
-              :srcset="`/img/${teacher.img}-220w.webp 1x, /img/${teacher.img}-220w-2x.webp 2x`"
+              :srcset="`img/${teacher.img}-220w.webp 1x, img/${teacher.img}-220w-2x.webp 2x`"
             />
             <img
               class="teacher-card__img"
-              :srcset="`/img/${teacher.img}-220w.jpg 1x, /img/${teacher.img}-220w-2x.jpg 2x`"
-              :src="`/img/${teacher.img}-220w.jpg`"
+              :srcset="`img/${teacher.img}-220w.jpg 1x, img/${teacher.img}-220w-2x.jpg 2x`"
+              :src="`img/${teacher.img}-220w.jpg`"
               width="220"
               height="219"
               :alt="`Преподаватель ${teacher.name}`"

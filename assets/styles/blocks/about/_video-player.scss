@@ -13,25 +13,29 @@
 }
 
 .video-player--initial {
-  --preview-url: url('/img/video-preview-w431.jpg');
-  
+  --preview-url: url('~assets/img/video-preview-w431.jpg');
+
   .video-player__video {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--preview-url);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      var(--preview-url);
     background-size: cover;
   }
 }
 
 .webp .video-player--initial {
-  --preview-url: url('/img/video-preview-w431.webp');
+  --preview-url: url('~assets/img/video-preview-w431.webp');
 }
 
 @media (min-resolution: $retina) {
   .video-player--initial {
-    --preview-url: url('/img/video-preview-w431-2x.jpg');
+    --preview-url: url('~assets/img/video-preview-w431-2x.jpg');
   }
 
   .webp .video-player--initial {
-    --preview-url: url('/img/video-preview-w431-2x.webp');
+    --preview-url: url('~assets/img/video-preview-w431-2x.webp');
   }
 }
 
@@ -44,4 +48,3 @@
     height: auto;
   }
 }
-

@@ -29,7 +29,12 @@
               </svg>
             </span>
           </button>
-          <nuxt-link class="nav__logo link logo" to="/">
+          <nuxt-link
+            class="nav__logo link logo"
+            to="/"
+            aria-label="На главную"
+            title="На главную"
+          >
             <svg width="143" height="23">
               <use href="#logo" />
             </svg>

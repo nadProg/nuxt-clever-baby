@@ -5,6 +5,7 @@
       В группах занимается до 5 человек. Все дети в группе примерно одного
       возраста и уровня знаний.
     </template>
+    <template #reserve-btn> Записаться </template>
   </BaseGroups>
 </template>
 <script>

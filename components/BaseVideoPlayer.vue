@@ -4,12 +4,13 @@
       <video
         ref="video"
         class="video-player__video"
+        preload="metadata"
         width="431"
         height="231"
-        poster="/"
+        poster="."
       >
-        <source type="video/webm" :src="`/video/${videoName}.webm`" />
-        <source type="video/mp4" :src="`/video/${videoName}.mp4`" />
+        <source type="video/webm" :src="`video/${videoName}.webm`" />
+        <source type="video/mp4" :src="`video/${videoName}.mp4`" />
       </video>
     </vue-plyr>
   </div>
@@ -60,11 +61,12 @@ export default {
 <style lang="scss">
 .plyr {
   --plyr-color-main: var(--color-wheat);
+  --plyr-video-background: transparent;
 }
 
 .plyr,
 .plyr__video-wrapper {
-  background: transparent;
+  background: transparent !important;
 }
 
 .plyr__control.plyr__tab-focus {

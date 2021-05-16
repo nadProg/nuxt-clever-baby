@@ -7,6 +7,7 @@
       Гармоничное развитие детей и обучение<br />
       через полное погружение в языковую среду
     </template>
+    <template #reserve-btn> Записаться </template>
   </BaseIntro>
 </template>
 <script>

@@ -28,10 +28,9 @@
               <b class="group-item__price"> {{ group.monthPrice }} &#8381;</b>
               в месяц
             </p>
-            <nuxt-link
-              class="group-item__reserve-btn btn btn--reserve"
-              to="/"
-            />
+            <nuxt-link class="group-item__reserve-btn btn btn--reserve" to="/">
+              <slot name="reserve-btn" />
+            </nuxt-link>
           </div>
         </li>
       </ul>

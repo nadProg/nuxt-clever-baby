@@ -1,57 +1,65 @@
 .intro {
   padding: 130px 0;
   background-color: var(--color-semi-wheat);
-  background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-1366w.png");
+  background-image: url('~assets/img/mask-intro-desktop.svg'),
+    url('~assets/img/bg-intro-1366w.png');
   background-repeat: no-repeat;
   background-position: center bottom -2px, center top;
   background-size: 100%;
 
   @media (max-width: $desktop) {
     padding: 90px 0;
-    background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-768w.png");
+    background-image: url('~assets/img/mask-intro-desktop.svg'),
+      url('~assets/img/bg-intro-768w.png');
     background-size: $desktop, 100%;
   }
 
   @media (max-width: $table) {
     padding: 60px 0;
-    background-image: url("/img/mask-intro-desktop.svg");
+    background-image: url('~assets/img/mask-intro-desktop.svg');
   }
 }
 
 .webp .intro {
-  background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-1366w.webp");
+  background-image: url('~assets/img/mask-intro-desktop.svg'),
+    url('~assets/img/bg-intro-1366w.webp');
 
   @media (max-width: $desktop) {
-    background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-768w.webp");
+    background-image: url('~assets/img/mask-intro-desktop.svg'),
+      url('~assets/img/bg-intro-768w.webp');
   }
 }
 
 @media (min-resolution: $retina) {
   .intro {
     @media (min-width: $desktop) {
-      background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-1366w-2x.png");
+      background-image: url('~assets/img/mask-intro-desktop.svg'),
+        url('~assets/img/bg-intro-1366w-2x.png');
     }
 
     @media (max-width: $desktop) {
-      background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-768w-2x.png");
+      background-image: url('~assets/img/mask-intro-desktop.svg'),
+        url('~assets/img/bg-intro-768w-2x.png');
     }
 
     @media (max-width: $table) {
-      background-image: url("/img/mask-intro-desktop.svg");
+      background-image: url('~assets/img/mask-intro-desktop.svg');
     }
   }
 
   .webp .intro {
     @media (min-width: $desktop) {
-      background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-1366w-2x.webp");
+      background-image: url('~assets/img/mask-intro-desktop.svg'),
+        url('~assets/img/bg-intro-1366w-2x.webp');
     }
 
     @media (max-width: $desktop) {
-      background-image: url("/img/mask-intro-desktop.svg"), url("/img/bg-intro-768w-2x.webp");
+      background-image: url('~assets/img/mask-intro-desktop.svg'),
+        url('~assets/img/bg-intro-768w-2x.webp');
     }
 
     @media (max-width: $table) {
-      background-image: url("/img/mask-intro-desktop.svg");
+      background-image: url('~assets/img/mask-intro-desktop.svg');
     }
   }
 }
@@ -83,6 +91,6 @@
   }
 
   .intro__reserve-btn {
-    --hover-color:  var(--font-xx-small);
+    --hover-color: var(--font-xx-small);
   }
 }

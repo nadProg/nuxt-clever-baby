@@ -8,7 +8,9 @@
         <p class="trial__text">
           <slot name="text" />
         </p>
-        <nuxt-link class="trial__reserve-btn btn btn--reserve" to="/" />
+        <nuxt-link class="trial__reserve-btn btn btn--reserve" to="/">
+          <slot name="reserve-btn" />
+        </nuxt-link>
       </div>
     </div>
   </section>

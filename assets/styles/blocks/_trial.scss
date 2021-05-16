@@ -3,11 +3,11 @@
 
   padding: 100px 0;
   text-align: center;
-  background: url('/img/bg-trials-1366w.png') no-repeat center;
+  background: url('~assets/img/bg-trials-1366w.png') no-repeat center;
   background-size: 100% 100%;
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url('/img/bg-trials-1366w-2x.png');
+    background-image: url('~assets/img/bg-trials-1366w-2x.png');
   }
 
   @media (max-width: $desktop) {
@@ -16,19 +16,19 @@
 
   @media (max-width: $table) {
     padding: 70px 0;
-    background-image: url('/img/bg-trials-768w.png');
+    background-image: url('~assets/img/bg-trials-768w.png');
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url('/img/bg-trials-768w-2x.png');
+      background-image: url('~assets/img/bg-trials-768w-2x.png');
     }
   }
 }
 
 .webp .trial {
-  background-image: url('/img/bg-trials-1366w-2x.webp');
+  background-image: url('~assets/img/bg-trials-1366w-2x.webp');
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url('/img/bg-trials-1366w-2x.webp');
+    background-image: url('~assets/img/bg-trials-1366w-2x.webp');
   }
 
   @media (max-width: $desktop) {
@@ -36,10 +36,10 @@
   }
 
   @media (max-width: $table) {
-    background-image: url('/img/bg-trials-768w.webp');
+    background-image: url('~assets/img/bg-trials-768w.webp');
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url('/img/bg-trials-768w-2x.webp');
+      background-image: url('~assets/img/bg-trials-768w-2x.webp');
     }
   }
 }
@@ -60,10 +60,9 @@
   margin: 0 0 30px;
 }
 
-
 .trial__reserve-btn {
   --bg-color: var(--color-wheat);
-  
+
   margin: 0;
 }
 

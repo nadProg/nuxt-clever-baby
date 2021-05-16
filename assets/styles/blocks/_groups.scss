@@ -1,12 +1,12 @@
-@import "groups/group-item";
+@import 'groups/group-item';
 
 .groups {
   padding: 180px 0;
   background-size: 100% 100%;
-  background-image: url("/img/bg-groups-1366w.png");
+  background-image: url('~assets/img/bg-groups-1366w.png');
 
   @media (min-resolution: $retina) {
-    background-image: url("/img/bg-groups-1366w-2x.png");
+    background-image: url('~assets/img/bg-groups-1366w-2x.png');
   }
 
   @media (max-width: $desktop) {
@@ -22,10 +22,10 @@
 }
 
 .webp .groups {
-  background-image: url("/img/bg-groups-1366w.webp");
+  background-image: url('~assets/img/bg-groups-1366w.webp');
 
   @media (min-resolution: $retina) {
-    background-image: url("/img/bg-groups-1366w-2x.webp");
+    background-image: url('~assets/img/bg-groups-1366w-2x.webp');
   }
 }
 

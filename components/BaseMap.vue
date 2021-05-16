@@ -17,24 +17,24 @@
     <picture v-else>
       <source
         type="image/webp"
-        srcset="/img/map-768w.webp 1x, /img/map-768w-2x.webp 2x"
+        srcset="img/map-768w.webp 1x, img/map-768w-2x.webp 2x"
         sizes="768px"
         media="(max-width: 768px)"
       />
       <source
         type="image/webp"
-        srcset="/img/map-1366w.webp 1x, /img/map-1366w-2x.webp 2x"
+        srcset="img/map-1366w.webp 1x, img/map-1366w-2x.webp 2x"
         sizes="1366px"
       />
       <source
         type="image/jpeg"
-        srcset="/img/map-768w.jpg 1x, /img/map-768w-2x.jpg 2x"
+        srcset="img/map-768w.jpg 1x, img/map-768w-2x.jpg 2x"
         sizes="768px"
         media="(max-width: 768px)"
       />
       <img
         class="contacts__map-fallback"
-        srcset="/img/map-1366w.jpg 1x, /img/map-1366w-2x.jpg 2x"
+        srcset="img/map-1366w.jpg 1x, img/map-1366w-2x.jpg 2x"
         sizes="1366px"
         :alt="address"
       />
@@ -71,7 +71,7 @@ export default {
     delete this.$L.Icon.Default.prototype._getIconUrl
     this.$L.Icon.Default.mergeOptions({
       iconRetinaUrl: null,
-      iconUrl: '/img/icon-location.svg',
+      iconUrl: require('~/assets/img/icon-location.svg'),
       shadowUrl: null,
       iconSize: [40, 40],
       iconAnchor: [20, 40],
